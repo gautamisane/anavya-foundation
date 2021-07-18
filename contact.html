@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anavya Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="images1/Alteter_2_27.jpg">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images1/da.png" height="70px" width="50px" alt="logoda"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="course.html">Area of Development</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!--------- Contact us--------->
+
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.2462747852433!2d72.81665584897061!3d19.00886658706327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce97aea427fd%3A0x6f87a1ad12e4e66e!2sHBS%20Towers%2C%20Dr%20Annie%20Besant%20Rd%2C%20Worli%20Shivaji%20Nagar%2C%20Worli%2C%20Mumbai%2C%20Maharashtra%20400030!5e0!3m2!1sen!2sin!4v1625936037861!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>86, Niyati Centre, HSB Road</h5>
+                        <p>Mumbai, Maharashtra.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+67 765637829</h5>
+                        <p>Office Number</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>anavyaf@gmol.com</h5>
+                        <p>Office email</p>
+                    </span>
+                </div>
+            </div>
+
+            <!-- form to database -->
+<
+            <div class="contact-col">
+                <form name="frmContact" class="needs-validation " method="post" action="contact.php">
+                    <p>
+                        <label for="Name">Your Name </label>
+                        <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Name" value=""
+                            required>
+                    <div class="invalid-feedback">
+                    </div>
+                        <label for="email">Your Email</label>
+                        <input type="text" class="form-control" name="txtEmail" id="txtEmail" placeholder="Email"
+                            value="" required>
+                    </p>
+                    <p>
+                        <label for="phone">Your Phone</label>
+                        <input type="text" class="form-control" name="txtPhone" id="txtPhone" placeholder="Phone"
+                            value="" required>
+                    </p>
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea name="txtMessage" class="form-control" id="txtMessage" placeholder="Message"
+                            required></textarea>
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        <input type="submit" name="Submit" id="Submit" value="Click me to Contact"
+                            class="btn btn-primary btn-lg btn-block">
+                    </p>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>social media</h4>
+                <p>Connect with us using these social media. Like and share with your loved ones too!</p>
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <p>Images may be subject to copyright. Careful. </p>
+    </section>
+
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
